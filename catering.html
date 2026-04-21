@@ -1,1 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catering for weddings, bridal parties, baby showers, and events up to 350 guests across East Texas from Whisk & Timber in Jacksonville." />
+  <title>Catering & Events | Whisk & Timber</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito+Sans:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="catering">
+
+  <!-- ============ SHARED NAV (copy to all pages) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Whisk and Timber home">
+        <span class="brand-logo">
+          <img src="assets/logo.png" alt="Whisk & Timber logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="brand-logo-fallback" aria-hidden="true">W&amp;T</span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+          <span class="brand-tag">Artisan Bakery</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="menu.html" data-nav="menu">What We Bake</a></li>
+          <li><a href="catering.html" data-nav="catering">Catering</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Let&rsquo;s Plan Your Event</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="menu.html" data-nav="menu">What We Bake</a></li>
+        <li><a href="catering.html" data-nav="catering">Catering</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Let&rsquo;s Plan Your Event</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ============ END SHARED NAV ============ -->
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="page-header-bg" style="background-image: url('assets/catering.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <p class="eyebrow light">Catering &amp; Events</p>
+      <h1 class="display light">
+        Made for <span class="italic">gatherings.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ============ CATERING DETAILS ============ -->
+  <section class="catering section">
+    <div class="container catering-grid">
+      <div class="catering-copy reveal">
+        <p class="eyebrow">Events We Serve</p>
+        <h2 class="display">
+          Custom menus for <span class="italic">every occasion.</span>
+        </h2>
+        <p>
+          Whether you&rsquo;re celebrating a milestone, planning a special
+          event, or hosting family and friends, our bakery blends traditional
+          techniques with modern flavors to deliver freshness and quality in
+          every bite. Every catering menu is built with you, for your day.
+        </p>
+
+        <div class="catering-grid-inner">
+          <div class="catering-item">
+            <h4>Weddings</h4>
+            <p>Custom cakes, dessert tables, and bridal party set-ups.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Bridal Parties</h4>
+            <p>Intimate gatherings styled with artisan pastries and sweets.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Baby Showers</h4>
+            <p>Sweet spreads tailored to the guest of honor.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Birthdays</h4>
+            <p>Custom cakes and treats for every milestone.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Personal Bookings</h4>
+            <p>Private events and bespoke orders of every size.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Large Gatherings</h4>
+            <p>Full-service catering for events up to 350 guests.</p>
+          </div>
+        </div>
+
+        <div class="catering-cta">
+          <div class="stat">
+            <span class="stat-num">350</span>
+            <span class="stat-label">Guests &middot; max catering capacity</span>
+          </div>
+          <a href="contact.html" class="btn btn-primary">Let&rsquo;s Plan Your Event</a>
+        </div>
+      </div>
+
+      <div class="catering-image reveal">
+        <div class="frame">
+          <img src="assets/catering.jpg" alt="Elegant dessert table for an event" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section class="service-area section">
+    <div class="service-bg" style="background-image: url('assets/service-area.jpg');"></div>
+    <div class="service-overlay"></div>
+    <div class="container service-content">
+      <p class="eyebrow light">Service Area</p>
+      <h2 class="display light">
+        Serving East Texas, <br/><span class="italic">within 45 miles.</span>
+      </h2>
+      <p class="light">
+        Based in Jacksonville, we cater and deliver across the surrounding
+        communities, including Tyler, Bullard, Palestine, and many nearby
+        towns.
+      </p>
+
+      <ul class="city-list">
+        <li>Jacksonville</li>
+        <li>Tyler</li>
+        <li>Bullard</li>
+        <li>Palestine</li>
+        <li>Rusk</li>
+        <li>Frankston</li>
+        <li>New Summerfield</li>
+        <li>Troup</li>
+      </ul>
+
+      <p class="light small">
+        Not listed? Reach out. If you&rsquo;re within 45 miles, we can help.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CTA STRIP ============ -->
+  <section class="cta-strip simple">
+    <div class="container cta-content">
+      <h2 class="display">
+        Ready to start <span class="italic">planning?</span>
+      </h2>
+      <p>
+        Share a few details and we&rsquo;ll build the perfect menu for your
+        event.
+      </p>
+      <div class="cta-actions">
+        <a href="contact.html" class="btn btn-primary">Let&rsquo;s Plan Your Event</a>
+        <a href="tel:+19037870726" class="btn btn-ghost">(903) 787-0726</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHARED FOOTER (copy to all pages) ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+        <p class="footer-tag">Artisan Bakery &middot; Jacksonville, Texas</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <p>New Storefront<br/>Coming Soon</p>
+        <p>Jacksonville, TX</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p><a href="tel:+19037870726">(903) 787-0726</a></p>
+        <p>Linda Edison, Owner</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">What We Bake</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Whisk &amp; Timber. All rights reserved.</p>
+        <p class="credit">Crafted with care in East Texas.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ============ END SHARED FOOTER ============ -->
+
+  <script src="script.js"></script>
+</body>
+</html>
