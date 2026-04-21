@@ -1,1 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the full menu at Whisk & Timber: wedding cakes, artisan breads, croissants, pies, pastries, bagels, packaged pasta, and coffee & tea." />
+  <title>Menu | Whisk & Timber Artisan Bakery</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito+Sans:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="menu">
+
+  <!-- ============ SHARED NAV (copy to all pages) ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="brand" aria-label="Whisk and Timber home">
+        <span class="brand-logo">
+          <img src="assets/logo.png" alt="Whisk & Timber logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="brand-logo-fallback" aria-hidden="true">W&amp;T</span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+          <span class="brand-tag">Artisan Bakery</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" data-nav="home">Home</a></li>
+          <li><a href="about.html" data-nav="about">About</a></li>
+          <li><a href="menu.html" data-nav="menu">What We Bake</a></li>
+          <li><a href="catering.html" data-nav="catering">Catering</a></li>
+          <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary nav-cta">Let&rsquo;s Plan Your Event</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="about.html" data-nav="about">About</a></li>
+        <li><a href="menu.html" data-nav="menu">What We Bake</a></li>
+        <li><a href="catering.html" data-nav="catering">Catering</a></li>
+        <li><a href="contact.html" data-nav="contact">Contact</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Let&rsquo;s Plan Your Event</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- ============ END SHARED NAV ============ -->
+
+  <!-- ============ PAGE HEADER ============ -->
+  <section class="page-header">
+    <div class="page-header-bg" style="background-image: url('assets/product-breads.jpg');"></div>
+    <div class="page-header-overlay"></div>
+    <div class="container page-header-content">
+      <p class="eyebrow light">What We Bake</p>
+      <h1 class="display light">
+        A full pantry of <span class="italic">handcrafted favorites.</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS ============ -->
+  <section class="products section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">The Menu</p>
+        <h2 class="display">
+          Made fresh, <span class="italic">made daily.</span>
+        </h2>
+        <p>
+          From wedding cakes to weekday loaves, every item is baked with
+          organic, non-GMO flour and the highest quality ingredients.
+          Organic options available on request.
+        </p>
+        <div class="ornament" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-breads.jpg" alt="Artisan sourdough bread" /></div>
+          <div class="product-body">
+            <h3>Artisan Breads</h3>
+            <p>Sourdough, rustic loaves, and specialty breads baked daily.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-croissants.jpg" alt="Fresh buttery croissants" /></div>
+          <div class="product-body">
+            <h3>Croissants</h3>
+            <p>Hand-laminated, buttery, and flaky. The classic French way.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-cakes.jpg" alt="Custom designed wedding cake" /></div>
+          <div class="product-body">
+            <h3>Wedding &amp; Custom Cakes</h3>
+            <p>Elegant, custom-designed cakes for weddings and milestones.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pies.jpg" alt="Rustic fruit pie" /></div>
+          <div class="product-body">
+            <h3>Pies</h3>
+            <p>Seasonal fruit, cream, and classic pies with flaky crust.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pastries.jpg" alt="Assorted fresh pastries" /></div>
+          <div class="product-body">
+            <h3>Fresh Pastries</h3>
+            <p>Scones, danishes, and daily specials from the pastry case.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-bagels.jpg" alt="Fresh artisan bagels" /></div>
+          <div class="product-body">
+            <h3>Bagels</h3>
+            <p>Boiled and baked in the traditional method. Chewy and golden.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pasta.jpg" alt="Packaged artisan pasta" /></div>
+          <div class="product-body">
+            <h3>Packaged Pasta</h3>
+            <p>Handcrafted pasta packaged for you to take home and enjoy.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/coffee.jpg" alt="Latte and pastry pairing" /></div>
+          <div class="product-body">
+            <h3>Coffee &amp; Tea</h3>
+            <p>The perfect pairing. Crafted drinks for every bake.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA STRIP ============ -->
+  <section class="cta-strip">
+    <div class="cta-bg" style="background-image: url('assets/catering.jpg');"></div>
+    <div class="cta-overlay"></div>
+    <div class="container cta-content">
+      <p class="eyebrow light">Hosting an Event?</p>
+      <h2 class="display light">
+        We cater for <span class="italic">gatherings of every size.</span>
+      </h2>
+      <p class="light">
+        From intimate bridal parties to events of up to 350 guests across
+        East Texas.
+      </p>
+      <div class="cta-actions">
+        <a href="catering.html" class="btn btn-primary">Explore Catering</a>
+        <a href="contact.html" class="btn btn-ghost light">Plan Your Event</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SHARED FOOTER (copy to all pages) ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+        <p class="footer-tag">Artisan Bakery &middot; Jacksonville, Texas</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <p>New Storefront<br/>Coming Soon</p>
+        <p>Jacksonville, TX</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p><a href="tel:+19037870726">(903) 787-0726</a></p>
+        <p>Linda Edison, Owner</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">What We Bake</a></li>
+          <li><a href="catering.html">Catering</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Whisk &amp; Timber. All rights reserved.</p>
+        <p class="credit">Crafted with care in East Texas.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- ============ END SHARED FOOTER ============ -->
+
+  <script src="script.js"></script>
+</body>
+</html>
