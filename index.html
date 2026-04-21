@@ -1,1 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Whisk & Timber is a full-service artisan bakery in Jacksonville, Texas, crafting wedding cakes, fresh pastries, artisan breads, and catering for events up to 350 guests." />
+  <title>Whisk & Timber — Artisan Bakery in Jacksonville, Texas</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Nunito+Sans:wght@300;400;500;600;700&family=Parisienne&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="Whisk and Timber home">
+        <span class="brand-logo">
+          <!-- Replace with client's logo image; this is a placeholder mark -->
+          <img src="assets/logo.png" alt="Whisk & Timber logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <span class="brand-logo-fallback" aria-hidden="true">W&amp;T</span>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+          <span class="brand-tag">Artisan Bakery</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">What We Bake</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#service-area">Service Area</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary nav-cta">Let&rsquo;s Plan Your Event</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#products">What We Bake</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#service-area">Service Area</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn-primary">Let&rsquo;s Plan Your Event</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-image" style="background-image: url('assets/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <p class="eyebrow light">Jacksonville, Texas &middot; Est. with 30+ Years of Craft</p>
+      <h1 class="display">
+        Where every loaf, <br />
+        pastry, and cake <br />
+        <span class="script">tells a story.</span>
+      </h1>
+      <p class="hero-sub">
+        A full-service artisan bakery crafting wedding cakes, fresh pastries,
+        and breads made with organic, non-GMO flour &mdash; for life&rsquo;s
+        sweetest moments.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Let&rsquo;s Plan Your Event</a>
+        <a href="#products" class="btn btn-ghost light">Explore the Menu</a>
+      </div>
+    </div>
+
+    <div class="hero-ornament" aria-hidden="true">
+      <div class="ornament-line"></div>
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2L14 10L22 12L14 14L12 22L10 14L2 12L10 10L12 2Z" stroke="currentColor" stroke-width="1" />
+      </svg>
+      <div class="ornament-line"></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Wedding Cakes</span><span class="dot">&#10023;</span>
+      <span>Artisan Breads</span><span class="dot">&#10023;</span>
+      <span>Fresh Pastries</span><span class="dot">&#10023;</span>
+      <span>Catering up to 350</span><span class="dot">&#10023;</span>
+      <span>Organic &amp; Non-GMO</span><span class="dot">&#10023;</span>
+      <span>Coffee &amp; Tea</span><span class="dot">&#10023;</span>
+      <span>Wedding Cakes</span><span class="dot">&#10023;</span>
+      <span>Artisan Breads</span><span class="dot">&#10023;</span>
+      <span>Fresh Pastries</span><span class="dot">&#10023;</span>
+      <span>Catering up to 350</span><span class="dot">&#10023;</span>
+      <span>Organic &amp; Non-GMO</span><span class="dot">&#10023;</span>
+      <span>Coffee &amp; Tea</span><span class="dot">&#10023;</span>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about section" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <div class="frame">
+          <img src="assets/about.jpg" alt="Baker kneading dough by hand" />
+        </div>
+        <div class="badge">
+          <span class="badge-num">30+</span>
+          <span class="badge-label">Years of<br/>Craft</span>
+        </div>
+      </div>
+
+      <div class="about-copy reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2 class="display">
+          Traditional techniques, <span class="italic">modern flavor.</span>
+        </h2>
+        <p>
+          At our full-service bakery, we specialize in crafting exceptional
+          baked goods that bring people together for life&rsquo;s sweetest
+          moments. From elegant, custom-designed wedding cakes to an
+          irresistible selection of fresh pastries, artisan breads, flaky
+          scones, and perfect bagels &mdash; every item is made with care,
+          creativity, and the highest quality ingredients.
+        </p>
+        <p>
+          Warm, welcoming, and dedicated to excellence, we strive to make
+          every visit memorable and every order uniquely yours.
+        </p>
+
+        <ul class="feature-list">
+          <li>
+            <span class="tick" aria-hidden="true">&#10022;</span>
+            Organic, non-GMO flour &mdash; never treated with glyphosate
+          </li>
+          <li>
+            <span class="tick" aria-hidden="true">&#10022;</span>
+            Daily-fresh breads and pastries baked from scratch
+          </li>
+          <li>
+            <span class="tick" aria-hidden="true">&#10022;</span>
+            Dietary preferences honored &mdash; organic options on request
+          </li>
+          <li>
+            <span class="tick" aria-hidden="true">&#10022;</span>
+            Generations of craft guiding every recipe
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INGREDIENTS / QUALITY ============ -->
+  <section class="quality section" id="quality">
+    <div class="quality-image" style="background-image: url('assets/ingredients.jpg');"></div>
+    <div class="quality-overlay"></div>
+    <div class="container quality-content">
+      <p class="eyebrow light">Ingredients</p>
+      <h2 class="display light">
+        Flour from the field, <br/><span class="italic">never from the lab.</span>
+      </h2>
+      <p class="light">
+        We bake exclusively with organic, non-GMO flour &mdash; sourced from
+        wheat that&rsquo;s never been treated with glyphosate. The difference
+        isn&rsquo;t just philosophy; you can taste it in every bite.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS / WHAT WE BAKE ============ -->
+  <section class="products section" id="products">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">What We Bake</p>
+        <h2 class="display">
+          A full pantry of <span class="italic">handcrafted favorites.</span>
+        </h2>
+        <div class="ornament" aria-hidden="true">
+          <span></span>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="3" fill="currentColor"/>
+          </svg>
+          <span></span>
+        </div>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-breads.jpg" alt="Artisan sourdough bread" /></div>
+          <div class="product-body">
+            <h3>Artisan Breads</h3>
+            <p>Sourdough, rustic loaves, and specialty breads baked daily.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-croissants.jpg" alt="Fresh buttery croissants" /></div>
+          <div class="product-body">
+            <h3>Croissants</h3>
+            <p>Hand-laminated, buttery, and flaky &mdash; the classic French way.</p>
+          </div>
+        </article>
+
+        <article class="product-card featured">
+          <div class="product-image"><img src="assets/product-cakes.jpg" alt="Custom designed wedding cake" /></div>
+          <div class="product-body">
+            <h3>Wedding &amp; Custom Cakes</h3>
+            <p>Elegant, custom-designed cakes for weddings and milestones.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pies.jpg" alt="Rustic fruit pie" /></div>
+          <div class="product-body">
+            <h3>Pies</h3>
+            <p>Seasonal fruit, cream, and classic pies with flaky crust.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pastries.jpg" alt="Assorted fresh pastries" /></div>
+          <div class="product-body">
+            <h3>Fresh Pastries</h3>
+            <p>Scones, danishes, and daily specials from the pastry case.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-bagels.jpg" alt="Fresh artisan bagels" /></div>
+          <div class="product-body">
+            <h3>Bagels</h3>
+            <p>Boiled and baked in the traditional method &mdash; chewy and golden.</p>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image"><img src="assets/product-pasta.jpg" alt="Packaged artisan pasta" /></div>
+          <div class="product-body">
+            <h3>Packaged Pasta</h3>
+            <p>Handcrafted pasta packaged for you to take home and enjoy.</p>
+          </div>
+        </article>
+
+        <article class="product-card coffee-card">
+          <div class="product-image"><img src="assets/coffee.jpg" alt="Latte and pastry pairing" /></div>
+          <div class="product-body">
+            <h3>Coffee &amp; Tea</h3>
+            <p>The perfect pairing &mdash; crafted drinks for every bake.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAROUSEL ============ -->
+  <section class="carousel-section section">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">From the Case</p>
+        <h2 class="display">
+          Today at the <span class="italic">bakery.</span>
+        </h2>
+      </div>
+    </div>
+
+    <div class="carousel" id="carousel" role="region" aria-label="Product carousel">
+      <button class="carousel-btn prev" id="carouselPrev" aria-label="Previous slide">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="carousel-viewport">
+        <ul class="carousel-track" id="carouselTrack">
+          <li class="carousel-slide"><img src="assets/product-cakes.jpg" alt="Wedding cake" /><span class="slide-label">Wedding Cakes</span></li>
+          <li class="carousel-slide"><img src="assets/product-croissants.jpg" alt="Croissants" /><span class="slide-label">Croissants</span></li>
+          <li class="carousel-slide"><img src="assets/product-breads.jpg" alt="Artisan bread" /><span class="slide-label">Artisan Breads</span></li>
+          <li class="carousel-slide"><img src="assets/product-pastries.jpg" alt="Fresh pastries" /><span class="slide-label">Fresh Pastries</span></li>
+          <li class="carousel-slide"><img src="assets/product-pies.jpg" alt="Fruit pie" /><span class="slide-label">Pies</span></li>
+          <li class="carousel-slide"><img src="assets/product-bagels.jpg" alt="Bagels" /><span class="slide-label">Bagels</span></li>
+          <li class="carousel-slide"><img src="assets/product-pasta.jpg" alt="Packaged pasta" /><span class="slide-label">Packaged Pasta</span></li>
+        </ul>
+      </div>
+
+      <button class="carousel-btn next" id="carouselNext" aria-label="Next slide">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="carousel-dots" id="carouselDots" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ CATERING ============ -->
+  <section class="catering section" id="catering">
+    <div class="container catering-grid">
+      <div class="catering-copy reveal">
+        <p class="eyebrow">Catering &amp; Events</p>
+        <h2 class="display">
+          Made for <span class="italic">gatherings.</span>
+        </h2>
+        <p>
+          Whether you&rsquo;re celebrating a milestone, planning a special
+          event, or simply stopping in for your daily favorite, our bakery
+          blends traditional techniques with modern flavors to deliver
+          freshness and quality in every bite.
+        </p>
+
+        <div class="catering-grid-inner">
+          <div class="catering-item">
+            <h4>Weddings</h4>
+            <p>Custom cakes, dessert tables, and bridal party set-ups.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Baby Showers</h4>
+            <p>Sweet spreads tailored to the guest of honor.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Birthdays</h4>
+            <p>Custom cakes and treats for every milestone.</p>
+          </div>
+          <div class="catering-item">
+            <h4>Personal Bookings</h4>
+            <p>Private events and bespoke orders of every size.</p>
+          </div>
+        </div>
+
+        <div class="catering-cta">
+          <div class="stat">
+            <span class="stat-num">350</span>
+            <span class="stat-label">Guests &middot; max catering capacity</span>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let&rsquo;s Plan Your Event</a>
+        </div>
+      </div>
+
+      <div class="catering-image reveal">
+        <div class="frame">
+          <img src="assets/catering.jpg" alt="Elegant dessert table for an event" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE AREA ============ -->
+  <section class="service-area section" id="service-area">
+    <div class="service-bg" style="background-image: url('assets/service-area.jpg');"></div>
+    <div class="service-overlay"></div>
+    <div class="container service-content">
+      <p class="eyebrow light">Service Area</p>
+      <h2 class="display light">
+        Serving East Texas, <br/><span class="italic">within 45 miles.</span>
+      </h2>
+      <p class="light">
+        Based in Jacksonville, we cater and deliver across the surrounding
+        communities &mdash; including Tyler, Bullard, Palestine, and many
+        nearby towns.
+      </p>
+
+      <ul class="city-list">
+        <li>Jacksonville</li>
+        <li>Tyler</li>
+        <li>Bullard</li>
+        <li>Palestine</li>
+        <li>Rusk</li>
+        <li>Frankston</li>
+        <li>New Summerfield</li>
+        <li>Troup</li>
+      </ul>
+
+      <p class="light small">
+        Not listed? Reach out &mdash; if you&rsquo;re within 45 miles, we can help.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-intro reveal">
+        <p class="eyebrow">Inquiries</p>
+        <h2 class="display">
+          Let&rsquo;s plan <span class="italic">something delicious.</span>
+        </h2>
+        <p>
+          Tell us a little about your event or order &mdash; we&rsquo;ll be
+          in touch to build the perfect menu for your day.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-block">
+            <span class="contact-label">Call Linda</span>
+            <a href="tel:+19037870726" class="contact-value">(903) 787-0726</a>
+            <span class="contact-sub">Linda Edison, Owner</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">Storefront</span>
+            <span class="contact-value">New Location Coming Soon</span>
+            <span class="contact-sub">Jacksonville, Texas</span>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">Hours</span>
+            <span class="contact-value">Coming Soon</span>
+            <span class="contact-sub">Check back for updates</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap reveal">
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+          <div class="field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="event-type">Event or Order Type</label>
+            <select id="event-type" name="event_type">
+              <option value="">Select one</option>
+              <option>Wedding Cake</option>
+              <option>Wedding Catering</option>
+              <option>Baby Shower</option>
+              <option>Birthday</option>
+              <option>Bridal Party</option>
+              <option>Personal Order</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="event-date">Event Date</label>
+              <input type="date" id="event-date" name="event_date" />
+            </div>
+            <div class="field">
+              <label for="guests">Guest Count</label>
+              <input type="number" id="guests" name="guests" min="1" max="350" />
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">Tell us about your event</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Let&rsquo;s Plan Your Event</button>
+          <p class="form-note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">Whisk <span class="amp">&amp;</span> Timber</span>
+        <p class="footer-tag">Artisan Bakery &middot; Jacksonville, Texas</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Visit</h5>
+        <p>New Storefront<br/>Coming Soon</p>
+        <p>Jacksonville, TX</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <p><a href="tel:+19037870726">(903) 787-0726</a></p>
+        <p>Linda Edison, Owner</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">What We Bake</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-base">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Whisk &amp; Timber. All rights reserved.</p>
+        <p class="credit">Crafted with care in East Texas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
