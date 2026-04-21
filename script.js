@@ -1,5 +1,5 @@
 /* ===========================================
-   WHISK & TIMBER — Interactions
+   WHISK & TIMBER | Interactions
    =========================================== */
 
 (function () {
@@ -196,7 +196,7 @@
         if (res.ok) {
           form.reset();
           note.textContent =
-            "Thank you! We'll be in touch within 1–2 business days.";
+            "Thank you! We'll be in touch within 1 to 2 business days.";
           note.className = 'form-note success';
         } else {
           note.textContent =
