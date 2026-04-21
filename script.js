@@ -1,21 +1,36 @@
 /* ===========================================
    WHISK & TIMBER | Interactions
+   Shared across all pages. Each feature checks
+   if its target elements exist before running.
    =========================================== */
 
 (function () {
   'use strict';
 
+  /* ---------- Active nav link ---------- */
+  // Uses the body's data-page attribute to match nav links with data-nav
+  const currentPage = document.body.getAttribute('data-page');
+  if (currentPage) {
+    document.querySelectorAll('[data-nav]').forEach((link) => {
+      if (link.getAttribute('data-nav') === currentPage) {
+        link.classList.add('is-active');
+      }
+    });
+  }
+
   /* ---------- Header scroll state ---------- */
   const header = document.getElementById('siteHeader');
-  const setHeaderState = () => {
-    if (window.scrollY > 40) {
-      header.classList.add('scrolled');
-    } else {
-      header.classList.remove('scrolled');
-    }
-  };
-  setHeaderState();
-  window.addEventListener('scroll', setHeaderState, { passive: true });
+  if (header) {
+    const setHeaderState = () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    };
+    setHeaderState();
+    window.addEventListener('scroll', setHeaderState, { passive: true });
+  }
 
   /* ---------- Mobile nav ---------- */
   const navToggle = document.getElementById('navToggle');
@@ -41,24 +56,26 @@
 
   /* ---------- Reveal on scroll ---------- */
   const revealEls = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window) {
-    const io = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('is-visible');
-            io.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
-    );
-    revealEls.forEach((el) => io.observe(el));
-  } else {
-    revealEls.forEach((el) => el.classList.add('is-visible'));
+  if (revealEls.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+      );
+      revealEls.forEach((el) => io.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('is-visible'));
+    }
   }
 
-  /* ---------- Carousel ---------- */
+  /* ---------- Carousel (only on pages that have one) ---------- */
   const track = document.getElementById('carouselTrack');
   const prevBtn = document.getElementById('carouselPrev');
   const nextBtn = document.getElementById('carouselNext');
@@ -130,8 +147,10 @@
     prevBtn.addEventListener('click', () => { prev(); startAuto(); });
 
     const carouselEl = document.getElementById('carousel');
-    carouselEl.addEventListener('mouseenter', stopAuto);
-    carouselEl.addEventListener('mouseleave', startAuto);
+    if (carouselEl) {
+      carouselEl.addEventListener('mouseenter', stopAuto);
+      carouselEl.addEventListener('mouseleave', startAuto);
+    }
 
     // Touch support
     let touchStartX = 0;
@@ -166,13 +185,12 @@
     startAuto();
   }
 
-  /* ---------- Contact form (Formspree) ---------- */
+  /* ---------- Contact form (only on contact page) ---------- */
   const form = document.getElementById('contactForm');
   const note = document.getElementById('formNote');
 
   if (form && note) {
     form.addEventListener('submit', async (e) => {
-      // Only handle with fetch if Formspree is wired up
       const action = form.getAttribute('action') || '';
       if (action.includes('YOUR_FORMSPREE_ID')) {
         e.preventDefault();
@@ -215,7 +233,7 @@
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
 
-  /* ---------- Smooth scroll for in-page links ---------- */
+  /* ---------- Smooth scroll for in-page anchor links ---------- */
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
     link.addEventListener('click', (e) => {
       const href = link.getAttribute('href');
