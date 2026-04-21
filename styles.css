@@ -456,7 +456,7 @@ p { margin: 0 0 18px; color: var(--walnut); max-width: 58ch; }
   display: flex;
   gap: 50px;
   white-space: nowrap;
-  animation: marquee 40s linear infinite;
+  animation: marquee 25s linear infinite;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.2rem;
@@ -656,10 +656,6 @@ p { margin: 0 0 18px; color: var(--walnut); max-width: 58ch; }
   border-color: var(--line);
 }
 .product-card:hover::before { border-color: rgba(255, 253, 248, 0.8); }
-
-.product-card.featured { grid-column: span 2; }
-.product-card.featured .product-image { height: 380px; }
-.product-card.featured h3 { font-size: 1.65rem; }
 
 .product-image {
   width: 100%;
@@ -1125,8 +1121,6 @@ a.contact-value:hover { color: var(--terracotta); }
     height: 520px;
   }
   .products-grid { grid-template-columns: repeat(2, 1fr); }
-  .product-card.featured { grid-column: span 2; }
-  .product-card.featured .product-image { height: 260px; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
   .carousel-slide { flex: 0 0 calc((100% - 28px) / 2); }
   .city-list { grid-template-columns: repeat(3, 1fr); }
@@ -1151,8 +1145,6 @@ a.contact-value:hover { color: var(--terracotta); }
   .badge-label { font-size: 0.6rem; }
 
   .products-grid { grid-template-columns: 1fr; }
-  .product-card.featured { grid-column: span 1; }
-  .product-card.featured .product-image,
   .product-image { height: 240px; }
 
   .catering-grid-inner { grid-template-columns: 1fr; }
