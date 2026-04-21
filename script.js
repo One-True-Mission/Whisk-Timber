@@ -136,7 +136,7 @@
 
     const startAuto = () => {
       stopAuto();
-      autoTimer = setInterval(next, 5500);
+      autoTimer = setInterval(next, 4000);
     };
     const stopAuto = () => {
       if (autoTimer) clearInterval(autoTimer);
