@@ -217,58 +217,20 @@ p { margin: 0 0 18px; color: var(--walnut); max-width: 58ch; }
 .brand {
   display: flex;
   align-items: center;
-  gap: 14px;
   color: var(--espresso);
+  height: 100%;
 }
 
-.brand-logo {
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.02em;
-  position: relative;
-  flex-shrink: 0;
-}
-.brand-logo img {
-  max-width: 100%;
-  max-height: 100%;
+.brand-logo-img {
+  height: 60px;
   width: auto;
-  height: auto;
+  max-width: 220px;
   object-fit: contain;
   display: block;
+  transition: opacity 0.2s ease;
 }
-.brand-logo-fallback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  border: 1.5px solid currentColor;
-}
-
-.brand-text { display: flex; flex-direction: column; line-height: 1; }
-
-.brand-name {
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 1.35rem;
-  letter-spacing: -0.005em;
-}
-.brand-name .amp { font-style: italic; color: var(--terracotta); font-weight: 400; padding: 0 0.05em; }
-
-.brand-tag {
-  font-family: var(--font-body);
-  font-size: 0.66rem;
-  text-transform: uppercase;
-  letter-spacing: 0.28em;
-  margin-top: 4px;
-  opacity: 0.8;
+.brand:hover .brand-logo-img {
+  opacity: 0.85;
 }
 
 .primary-nav ul {
@@ -1147,12 +1109,20 @@ a.contact-value:hover { color: var(--terracotta); }
 }
 
 .footer-brand .brand-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.005em;
   font-size: 2rem;
   color: var(--cream);
   display: block;
   margin-bottom: 8px;
 }
-.footer-brand .amp { color: #f3c9a5; }
+.footer-brand .amp {
+  font-style: italic;
+  font-weight: 400;
+  padding: 0 0.05em;
+  color: #f3c9a5;
+}
 .footer-tag {
   color: rgba(246, 239, 228, 0.6);
   font-size: 0.88rem;
@@ -1241,6 +1211,11 @@ a.contact-value:hover { color: var(--terracotta); }
   .primary-nav,
   .nav-cta { display: none; }
   .nav-toggle { display: flex; }
+
+  .brand-logo-img {
+    height: 48px;
+    max-width: 180px;
+  }
 
   .hero { padding-top: calc(var(--nav-h) + 20px); }
   .hero-sub { font-size: 1rem; }
