@@ -467,16 +467,19 @@ p { margin: 0 0 18px; color: var(--walnut); max-width: 58ch; }
   display: flex;
   gap: 50px;
   white-space: nowrap;
+  width: max-content;
   animation: marquee 25s linear infinite;
   font-family: var(--font-display);
   font-style: italic;
   font-size: 1.2rem;
   font-weight: 400;
+  will-change: transform;
 }
-.marquee-track .dot { color: var(--terracotta); }
+.marquee-track .dot { color: var(--terracotta); padding-right: 50px; }
+.marquee-track > span:not(.dot) { padding-right: 0; }
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  0%   { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 /* ===========================================
@@ -1251,7 +1254,12 @@ a.contact-value:hover { color: var(--terracotta); }
   .footer-inner { grid-template-columns: 1fr; gap: 32px; padding: 60px 0 40px; }
   .footer-base .container { flex-direction: column; align-items: flex-start; }
 
-  .marquee-track { font-size: 1rem; gap: 36px; animation-duration: 15s; }
+  .marquee-track {
+    font-size: 1rem;
+    gap: 36px;
+    animation-duration: 14s;
+  }
+  .marquee-track .dot { padding-right: 36px; }
 
   .cta-strip { padding: 70px 0; }
   .cta-actions .btn { width: 100%; }

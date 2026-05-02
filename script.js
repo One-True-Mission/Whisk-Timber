@@ -195,7 +195,7 @@
       if (action.includes('YOUR_FORMSPREE_ID')) {
         e.preventDefault();
         note.textContent =
-          'Form is not yet connected. Please call (903) 787-0726 to plan your event.';
+          'Form is not yet connected. Please call (903) 339-1009 to plan your event.';
         note.className = 'form-note error';
         return;
       }
@@ -218,12 +218,12 @@
           note.className = 'form-note success';
         } else {
           note.textContent =
-            'Something went wrong. Please call (903) 787-0726 to reach us directly.';
+            'Something went wrong. Please call (903) 339-1009 to reach us directly.';
           note.className = 'form-note error';
         }
       } catch (err) {
         note.textContent =
-          'Network issue. Please call (903) 787-0726 to reach us directly.';
+          'Network issue. Please call (903) 339-1009 to reach us directly.';
         note.className = 'form-note error';
       }
     });
